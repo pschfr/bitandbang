@@ -1,20 +1,20 @@
 {
-  "name": "bitandbang",
-  "version": "1.1.0",
-  "description": "A personal card for Tierney Cyren (@bitandbang)",
+  "name": "pschfr",
+  "version": "1.0.0",
+  "description": "A personal card for Paul Schaefer (@pschfr)",
   "main": "index.js",
   "bin": {
     "bitandbang": "./bin/card.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bnb/bitandbang.git"
+    "url": "https://github.com/pschfr/pschfr.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Tierney Cyren <hello@bnb.im> (http://bnb.im)",
+  "author": "Paul Schaefer <hello@paulmakesthe.net> (https://paulmakesthe.net)",
   "license": "MIT",
   "dependencies": {
     "boxen": "^2.1.0",
