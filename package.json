@@ -1,6 +1,6 @@
 {
   "name": "pschfr",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A personal card for Paul Schaefer (@pschfr)",
   "main": "index.js",
   "bin": {
