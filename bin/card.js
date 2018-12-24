@@ -1,23 +1,23 @@
 #!/usr/bin/env node
 // 👆 Used to tell Node.js that this is a CLI tool
 
-// Pull in our modules
-const chalk = require('chalk')
+// Pull in our colors from kleur.
+const { white, cyan, bold } = require('kleur')
 
-// Text + chalk definitions
+// Text + color definitions
 const data = {
-  name: chalk.white.bold('Paul Schaefer'),
-  handle: chalk.cyan('pschfr'),
-  work: chalk.white('Front and Back-end Developer'),
-  twitter: chalk.cyan('https://twitter.com/pschfr'),
-  github: chalk.cyan('https://github.com/pschfr'),
-  web: chalk.cyan('https://paulmakesthe.net/'),
-  npx: chalk.white('npx pschfr'),
-  labelWork: chalk.white.bold('Work:'),
-  labelTwitter: chalk.white.bold('Twitter:'),
-  labelGitHub: chalk.white.bold('GitHub:'),
-  labelWeb: chalk.white.bold('Web:'),
-  labelCard: chalk.white.bold('Card:')
+  name: white().bold('Paul Schaefer'),
+  handle: cyan('pschfr'),
+  work: white('Front and Back-end Developer'),
+  twitter: cyan('https://twitter.com/pschfr'),
+  github: cyan('https://github.com/pschfr'),
+  web: cyan('https://paulmakesthe.net/'),
+  npx: white('npx pschfr'),
+  labelWork: white().bold('Work:'),
+  labelTwitter: white().bold('Twitter:'),
+  labelGitHub: white().bold('GitHub:'),
+  labelWeb: white().bold('Web:'),
+  labelCard: white().bold('Card:')
 }
 
 // Actual strings we're going to output
@@ -29,7 +29,5 @@ const githubing = `${data.labelGitHub}  ${data.github}`
 const webing = `${data.labelWeb}     ${data.web}`
 const carding = `${data.labelCard}    ${data.npx}`
 
-// Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + webing + newline + newline + carding + newline
-
-console.log(output)
+// Output it all!
+console.log(newline + heading + newline + newline + working + newline + twittering + newline + githubing + newline + webing + newline + newline + carding + newline)
