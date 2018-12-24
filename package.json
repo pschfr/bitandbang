@@ -13,7 +13,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
   "author": "Paul Schaefer <hello@paulmakesthe.net> (https://paulmakesthe.net)",
   "license": "MIT",
   "dependencies": {
