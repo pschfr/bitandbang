@@ -24,6 +24,7 @@
   "author": "Paul Schaefer <hello@paulmakesthe.net> (https://paulmakesthe.net)",
   "license": "MIT",
   "dependencies": {
+    "boxen": "^2.1.0",
     "kleur": "^3.0.1"
   }
 }

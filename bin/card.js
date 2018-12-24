@@ -1,16 +1,27 @@
 #!/usr/bin/env node
 // 👆 Used to tell Node.js that this is a CLI tool
 
-// Pull in our colors from kleur.
-const { white, cyan, bold } = require('kleur')
+// Pulls in our colors from kleur, and our boxes from boxen
+const { blue, bold } = require('kleur')
+const boxen = require('boxen')
 
-// Actual strings we're going to output
-const heading = white().bold('Paul Schaefer') + ' ' + cyan('pschfr') + '\n\n'
-const working = white().bold('Work:') + '    ' + white('Front and Back-end Developer') + '\n'
-const twitter = white().bold('Twitter:') + ' ' + cyan('https://twitter.com/pschfr') + '\n'
-const github  = white().bold('GitHub:') + '  ' + cyan('https://github.com/pschfr') + '\n'
-const website = white().bold('Web:') + '     ' + cyan('https://paulmakesthe.net/') + '\n\n'
-const card    = white().bold('Card:') + '    ' + white('npx pschfr')
+// Builds the actual strings we're going to output
+const heading = bold('Paul Schaefer') + ' ' + blue('pschfr') + '\n\n'
+const working = bold('Work:') + '    ' + 'Freelance Web Developer\n'
+const twitter = bold('Twitter:') + ' ' + blue('https://twitter.com/pschfr') + '\n'
+const github  = bold('GitHub:') + '  ' + blue('https://github.com/pschfr') + '\n'
+const website = bold('Website:') + ' ' + blue('https://paulmakesthe.net') + '\n'
+const email   = bold('Email:') + '   ' + blue('hello@paulmakesthe.net') + '\n\n'
+const card    = bold('Card:') + '    ' + 'npx pschfr'
+const output  = heading + working + twitter + github + website + email + card
 
-// Output it all!
-console.log('\n' + heading + working + twitter + github + website + card + '\n')
+// Options for boxen
+const box_opts = {
+	padding: 1,
+	margin: 1,
+	borderStyle: 'round',
+	borderColor: 'gray'
+}
+
+// Output it all, now in a box!
+console.log(boxen(output, box_opts))
